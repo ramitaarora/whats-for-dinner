@@ -31,11 +31,13 @@
   background-color: grey;
 }
 
-#image-container {
-  height: 500px;
-  width: 500px;
-  border: 1px solid lightgrey;
-  margin: 30px auto;
+#image-container img {
+  height: 400px;
+  width: 400px;
+  margin: 30px auto 0 auto;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: center;
 }
 
 input[type="checkbox"] {

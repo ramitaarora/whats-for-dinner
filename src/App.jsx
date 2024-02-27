@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
 import foodData from './foodData.json';
 import './App.css'
-import { css } from '@emotion/react';
 
 function App() {
   const [filterOptions, setFilterOptions] = useState([]);
@@ -9,6 +8,10 @@ function App() {
   const [filterForm, setFilterForm] = useState([]);
   const [tagForm, setTagForm] = useState([]);
   const [results, setResults] = useState([]);
+  const [image, setImage] = useState("")
+  const [alt, setAlt] = useState("")
+  const [mealName, setMealName] = useState("")
+  const [name, setName] = useState("")
 
   useEffect(() => {
     let ingredients = [];
@@ -31,11 +34,6 @@ function App() {
     setTagOptions(tags);
   }, [foodData])
 
-  // remove!!
-  useEffect(() => {
-    console.log(tagForm);
-  }, [tagForm])
-
   const addFilter = (event) => {
     if (event.target.checked) {
       setFilterForm(pre => [...pre, event.target.id])
@@ -45,7 +43,7 @@ function App() {
       setFilterForm(unselect);
     }
   }
-  
+
   const addTag = (event) => {
     if (event.target.checked) {
       setTagForm(pre => [...pre, event.target.id])
@@ -58,6 +56,44 @@ function App() {
 
   const handleChoice = (event) => {
     event.preventDefault();
+    setResults(foodData);
+    let counter = 0;
+  
+    const flip = () => {
+      setTimeout(() => {
+        setImage(results[counter].image);
+        setMealName(results[counter].meal);
+        counter += 1;
+
+        if (counter < results.length - 4) {
+          flip();
+        }
+        else {
+          flipSlow();
+        }
+      }, 100 + (counter + 50))
+    }
+
+    const flipSlow = () => {
+      setTimeout(() => {
+        setImage(results[counter].image);
+        setMealName(results[counter].meal);
+        counter += 1;
+
+        if (counter < results.length - 1) {
+          flipSlow();
+        }
+
+        else {
+          setImage(results[results.length - 1].image);
+          setMealName(results[results.length - 1].meal);
+          setAlt(results[results.length - 1].source);
+        }
+      }, 500)
+    }
+
+    flip();
+
   }
 
   return (
@@ -68,35 +104,40 @@ function App() {
       <main>
         <h2>Select All Ingredients Not on Hand</h2>
 
-          <div id="filters">
-            {filterOptions.length ? (
-              filterOptions.map((ingredient, index) =>
-                <div id="filter-container" key={index}>
-                  <input id={ingredient} type="checkbox" value={ingredient} onClick={addFilter}></input>
-                  <label id="filter-label" htmlFor={ingredient}>{ingredient}</label>
-                </div>
-              )
-            ) : null}
-          </div>
-
-          <h2>Include Only:</h2>
-          <div id="options">
-              {tagOptions.length ? (
-                tagOptions.map((tag, index) =>
-                  <div id="tag-container" key={index}>
-                    <input id={tag} type="checkbox" value={tag} onClick={addTag}></input>
-                    <label id="tag-label" htmlFor={tag}>{tag}</label>
-                  </div>
-                )
-              ): null}
-          </div>
-          <button onClick={handleChoice}>What's for Dinner?</button>
-
-        <div id="results">
-          <div id="image-container">
-              <img src="" alt=""/>
-          </div>
+        <div id="filters">
+          {filterOptions.length ? (
+            filterOptions.map((ingredient, index) =>
+              <div id="filter-container" key={index}>
+                <input id={ingredient} type="checkbox" value={ingredient} onClick={addFilter}></input>
+                <label id="filter-label" htmlFor={ingredient}>{ingredient}</label>
+              </div>
+            )
+          ) : null}
         </div>
+
+        <h2>Include Only:</h2>
+        <div id="options">
+          {tagOptions.length ? (
+            tagOptions.map((tag, index) =>
+              <div id="tag-container" key={index}>
+                <input id={tag} type="checkbox" value={tag} onClick={addTag}></input>
+                <label id="tag-label" htmlFor={tag}>{tag}</label>
+              </div>
+            )
+          ) : null}
+        </div>
+        <button onClick={handleChoice}>What's for Dinner?</button>
+
+
+        {results.length ? (
+          <div id="results">
+            <div id="image-container">
+              <img src={image} alt={alt} />
+            </div>
+            <h2>{mealName}</h2>
+          </div>
+        ) : null}
+
 
       </main>
       <footer>
