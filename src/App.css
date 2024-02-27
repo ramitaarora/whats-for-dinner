@@ -5,18 +5,20 @@
   text-align: center;
 }
 
-#filters {
+#filters, #options {
   display: flex; 
   justify-content: space-evenly;
   flex-wrap: wrap;
   margin: 20px auto;
 }
 
-#filter-container {
+#filter-container,
+#tag-container {
   margin: 15px 10px;
 }
 
-#filter-container label {
+#filter-container label,
+#tag-container label {
   background-color: lightgrey;
   color: black;
   padding: 10px;
@@ -24,7 +26,8 @@
   cursor: pointer;
 }
 
-#filter-container input:checked ~ #filter-label {
+#filter-container input:checked ~ #filter-label,
+#tag-container input:checked ~ #tag-label {
   background-color: grey;
 }
 
@@ -32,10 +35,13 @@
   height: 500px;
   width: 500px;
   border: 1px solid lightgrey;
-  margin: 50px auto;
+  margin: 30px auto;
 }
 
 input[type="checkbox"] {
   display: none;
 }
 
+footer {
+  font-size: 8px;
+}
