@@ -1,0 +1,116 @@
+[
+    {
+        "meal": "Chicken Curry",
+        "ingredients": ["chicken", "tomatoes"],
+        "image": "",
+        "tags": ["gluten-free", "dairy-free"]
+    },
+    {
+        "meal": "Butter Chicken",
+        "ingredients": ["chicken", "tomatoes", "yogurt"],
+        "image": "",
+        "tags": ["gluten-free"]
+    },
+    {
+        "meal": "Mutter Paneer",
+        "ingredients": ["paneer", "tomatoes"],
+        "image": "",
+        "tags": ["vegetarian", "gluten-free"]
+    },
+    {
+        "meal": "Cholle",
+        "ingredients": ["chick peas", "tomatoes"],
+        "image": "",
+        "tags": ["vegetarian", "dairy-free", "gluten-free"]
+    },
+    {
+        "meal": "Rajma",
+        "ingredients": ["kidney beans", "tomatoes"],
+        "image": "",
+        "tags": ["vegetarian", "dairy-free", "gluten-free"]
+    },
+    {
+        "meal": "Turkey Kofta",
+        "ingredients": ["ground turkey", "tomatoes"],
+        "image": "",
+        "tags": ["gluten-free", "dairy-free"]
+    },
+    {
+        "meal": "Kebab",
+        "ingredients": ["ground chicken"],
+        "image": "",
+        "tags": ["gluten-free", "dairy-free"]
+    },
+    {
+        "meal": "Kabab",
+        "ingredients": ["chicken"],
+        "image": "",
+        "tags": ["gluten-free", "dairy-free"]
+    },
+    {
+        "meal": "Mexican Plate",
+        "ingredients": ["chicken", "avocado"],
+        "image": "",
+        "tags": ["gluten-free"]
+    },
+    {
+        "meal": "Mediterranean Plate",
+        "ingredients": ["chicken", "hummus", "garlic sauce"],
+        "image": "",
+        "tags": ["gluten-free", "dairy-free"]
+    },
+    {
+        "meal": "Tacos",
+        "ingredients": ["chicken", "sour cream"],
+        "image": "",
+        "tags": ["gluten-free"]
+    },
+    {
+        "meal": "Chicken 65 Wraps",
+        "ingredients": ["chicken", "roti"],
+        "image": "",
+        "tags": ["gluten-free"]
+    },
+    {
+        "meal": "Grilled Cheese and Tomato Soup",
+        "ingredients": ["bread", "sliced cheese", "soup"],
+        "image": "",
+        "tags": ["vegetarian"]
+    },
+    {
+        "meal": "Asian Plate",
+        "ingredients": ["chicken", "steamed vegetables"],
+        "image": "",
+        "tags": ["gluten-free", "dairy-free"]
+    },
+    {
+        "meal": "Asian Plate (Tofu)",
+        "ingredients": ["tofu", "steamed vegetables"],
+        "image": "",
+        "tags": ["vegetarian", "dairy-free", "gluten-free"]
+    },
+    {
+        "meal": "Pasta",
+        "ingredients": ["mushrooms"],
+        "image": "",
+        "tags": ["vegetarian"]
+    },
+    {
+        "meal": "Spaghetti and Meatballs",
+        "ingredients": ["meatballs"],
+        "image": "",
+        "tags": []
+    },
+    {
+        "meal": "Pizza",
+        "ingredients": ["pizza crust"],
+        "image": "",
+        "tags": ["vegetarian"]
+    },
+    {
+        "meal": "Saag Paneer and Roti",
+        "ingredients": ["paneer", "spinach"],
+        "image": "",
+        "tags": ["vegetarian"]
+    }
+]
