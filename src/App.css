@@ -5,38 +5,37 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+#filters {
+  display: flex; 
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 20px auto;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#filter-container {
+  margin: 15px 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+#filter-container label {
+  background-color: lightgrey;
+  color: black;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
-.card {
-  padding: 2em;
+#filter-container input:checked ~ #filter-label {
+  background-color: grey;
 }
 
-.read-the-docs {
-  color: #888;
+#image-container {
+  height: 500px;
+  width: 500px;
+  border: 1px solid lightgrey;
+  margin: 50px auto;
 }
+
+input[type="checkbox"] {
+  display: none;
+}
+
