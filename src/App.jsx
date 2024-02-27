@@ -56,16 +56,16 @@ function App() {
 
   const handleChoice = (event) => {
     event.preventDefault();
-    setResults(foodData);
+    let tempFoods = foodData;
     let counter = 0;
-  
+
     const flip = () => {
       setTimeout(() => {
         setImage(results[counter].image);
         setMealName(results[counter].meal);
         counter += 1;
 
-        if (counter < results.length - 4) {
+        if (counter < results.length - 5) {
           flip();
         }
         else {
@@ -92,8 +92,45 @@ function App() {
       }, 500)
     }
 
-    flip();
+    if (filterForm.length || tagForm.length) {
 
+      if (filterForm.length && !tagForm.length) {
+        for (let i = 0; i < filterForm.length; i++) {
+          tempFoods.filter(meal => !meal.ingredients.includes(filterForm[i]));
+        }
+
+        setResults(tempFoods.sort(() => Math.random() - 0.5));
+        flip();
+      }
+
+      else if (tagForm.length && !filterForm.length) {
+        for (let i = 0; i < tagForm.length; i++) {
+          tempFoods.filter(meal => !meal.ingredients.includes(filterForm[i]));
+        }
+
+        setResults(tempFoods.sort(() => Math.random() - 0.5));
+        flip();
+      }
+
+      else {
+        for (let i = 0; i < filterForm.length; i++) {
+          tempFoods.filter(meal => !meal.ingredients.includes(filterForm[i]));
+        }
+
+        for (let j = 0; j < tagForm.length; j++) {
+          tempFoods.filter(meal => !meal.ingredients.includes(filterForm[j]));
+        }
+
+        setResults(tempFoods.sort(() => Math.random() - 0.5));
+        flip();
+      }
+
+      
+
+    } else {
+      setResults(tempFoods.sort(() => Math.random() - 0.5));
+      flip();
+    }
   }
 
   return (
