@@ -52,10 +52,14 @@ function App() {
       setTagForm(unselect);
     }
   }
+  
+  useEffect(() => {
+    if (results.length) {
+      handleFlip();
+    }
+  }, [results])
 
-  const handleChoice = (event) => {
-    event.preventDefault();
-    let tempFoods = [...foodData];
+  const handleFlip = () => {
     let counter = 0;
 
     const flip = () => {
@@ -64,13 +68,13 @@ function App() {
         setMealName(results[counter].meal);
         counter += 1;
 
-        if (counter < results.length - 5) {
+        if (counter < results.length - 3) {
           flip();
         }
         else {
           flipSlow();
         }
-      }, 100 + (counter + 50))
+      }, 50 + (counter + 50))
     }
 
     const flipSlow = () => {
@@ -91,8 +95,18 @@ function App() {
       }, 500)
     }
 
-    if (filterForm.length || tagForm.length) {
+    flip();
+  }
 
+  const handleChoice = async (event) => {
+    event.preventDefault();
+    let tempFoods = [...foodData];
+    
+    const setArray = () => {
+      setResults(tempFoods.sort(() => Math.random() - 0.5))
+    }
+    
+    const filterArray = () => {
       if (filterForm.length) {
         for (let i = 0; i < filterForm.length; i++) {
           tempFoods = tempFoods.filter(meal => !meal.ingredients.includes(filterForm[i]));
@@ -103,14 +117,15 @@ function App() {
         for (let i = 0; i < tagForm.length; i++) {
           tempFoods = tempFoods.filter(meal => meal.tags.includes(tagForm[i]));
         }
-      }
-      
-      setResults(tempFoods.sort(() => Math.random() - 0.5));
-      flip();
-
-    } else {
-      setResults(tempFoods.sort(() => Math.random() - 0.5));
-      flip();
+      } 
+    }
+    
+    if (filterForm.length || tagForm.length) {
+      filterArray();
+      setArray();
+    }
+    else {
+      setArray();
     }
   }
 
@@ -152,11 +167,11 @@ function App() {
 
 
         <div id="results">
-            <div id="image-container">
-              <img src={image} alt={alt} />
-            </div>
-            <h2>{mealName}</h2>
+          <div id="image-container">
+            <img src={image} alt={alt} />
           </div>
+          <h2>{mealName}</h2>
+        </div>
 
         <button onClick={reset}>Reset</button>
       </main>
