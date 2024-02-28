@@ -2,148 +2,155 @@
     {
         "meal": "Chicken Curry",
         "ingredients": ["chicken", "tomatoes"],
-        "image": "https://cdn.pixabay.com/photo/2021/07/29/12/43/curry-6507120_1280.jpg",
         "tags": ["gluten-free", "dairy-free"],
+        "image": "/images/chicken-curry.jpeg",
         "source": "https://pixabay.com/photos/curry-chicken-indian-food-dish-6507120/"
     },
     {
         "meal": "Butter Chicken",
         "ingredients": ["chicken", "tomatoes", "yogurt"],
-        "image": "https://cdn.pixabay.com/photo/2020/05/10/13/53/naan-5154130_1280.jpg",
         "tags": ["gluten-free"],
+        "image": "/images/butter-chicken.jpeg",
         "source": "https://pixabay.com/photos/naan-butter-chicken-indian-food-5154130/"
     },
     {
         "meal": "Mutter Paneer",
         "ingredients": ["paneer", "tomatoes"],
-        "image": "https://cdn.pixabay.com/photo/2022/03/02/12/42/paneer-7043097_1280.jpg",
         "tags": ["vegetarian", "gluten-free"],
+        "image": "/images/mutter-paneer.jpeg",
         "source": "https://pixabay.com/photos/paneer-gourmet-dining-restaurant-7043097/"
     },
     {
         "meal": "Biriyani",
         "ingredients": ["chicken", "tomatoes", "yogurt"],
-        "image": "https://cdn.pixabay.com/photo/2022/03/02/12/40/dish-7043064_1280.jpg",
         "tags": ["gluten-free"],
+        "image": "/images/biriyani.jpeg",
         "source": "https://pixabay.com/photos/dish-biryani-cuisine-7043064/"
     },
     {
         "meal": "Cholle",
         "ingredients": ["chick peas", "tomatoes"],
-        "image": "https://cdn.pixabay.com/photo/2022/12/28/17/44/bowl-7683485_1280.jpg",
         "tags": ["vegetarian", "dairy-free", "gluten-free"],
+        "image": "/images/cholle.jpeg",
         "source": "https://pixabay.com/photos/bowl-meal-food-cuisine-bread-7683485/"
     },
     {
         "meal": "Rajma",
         "ingredients": ["kidney beans", "tomatoes"],
-        "image": "https://cdn.pixabay.com/photo/2021/07/03/09/09/beans-6383373_1280.jpg",
         "tags": ["vegetarian", "dairy-free", "gluten-free"],
+        "image": "/images/rajma.jpeg",
         "source": "https://pixabay.com/photos/beans-soup-stew-bowl-bean-goulash-6383373/"
     },
     {
         "meal": "Kofta",
         "ingredients": ["ground chicken", "tomatoes"],
-        "image": "https://carveyourcraving.com/wp-content/uploads/2021/09/Best-Malai-Kofta-recipe.jpg",
         "tags": ["gluten-free", "dairy-free"],
+        "image": "/images/kofta.jpg",
         "source": "https://carveyourcraving.com/malai-kofta/"
     },
     {
         "meal": "Kebab",
         "ingredients": ["ground chicken"],
-        "image": "https://cdn.pixabay.com/photo/2020/03/21/18/04/kabab-4954818_1280.jpg",
         "tags": ["gluten-free", "dairy-free"],
+        "image": "/images/kebab.jpeg",
         "source": "https://pixabay.com/photos/kabab-food-grill-dinner-chicken-4954818/"
     },
     {
         "meal": "Shish Kabab",
         "ingredients": ["chicken"],
-        "image": "https://cdn.pixabay.com/photo/2014/08/14/14/21/shish-kebab-417994_1280.jpg",
         "tags": ["gluten-free", "dairy-free"],
+        "image": "/images/shish-kabab.jpeg",
         "source": "https://pixabay.com/photos/shish-kebab-meat-skewer-417994/"
     },
     {
         "meal": "Mexican Plate",
         "ingredients": ["chicken", "avocado"],
-        "image": "https://cdn.pixabay.com/photo/2023/01/30/20/01/chicken-7756518_1280.jpg",
         "tags": ["gluten-free"],
+        "image": "/images/mexican.jpeg",
         "source": "https://pixabay.com/photos/chicken-taco-bowl-salad-mexican-7756518/"
     },
     {
         "meal": "Mediterranean Plate",
         "ingredients": ["chicken", "hummus", "garlic sauce"],
-        "image": "https://cdn.pixabay.com/photo/2016/09/06/14/23/authentic-greek-1649225_1280.jpg",
         "tags": ["gluten-free", "dairy-free"],
+        "image": "/images/mediterranean.jpeg",
         "source": "https://pixabay.com/photos/authentic-greek-greek-food-mezes-1649225/"
     },
     {
         "meal": "Tacos",
         "ingredients": ["chicken"],
-        "image": "https://cdn.pixabay.com/photo/2017/12/27/04/28/tortilla-3041938_1280.jpg",
         "tags": ["gluten-free"],
+        "image": "/images/tacos.jpeg",
         "source": "https://pixabay.com/photos/tortilla-food-meal-taco-salsa-3041938/"
     },
     {
         "meal": "Chicken 65 Wraps",
         "ingredients": ["chicken", "roti"],
-        "image": "https://cdn.pixabay.com/photo/2017/06/29/20/09/mexican-2456038_1280.jpg",
         "tags": ["gluten-free"],
+        "image": "/images/chicken-65.jpeg",
         "source": "https://pixabay.com/photos/mexican-food-burrito-mexican-food-2456038/"
     },
     {
         "meal": "Grilled Cheese and Tomato Soup",
         "ingredients": ["bread", "sliced cheese", "soup"],
-        "image": "https://cdn.pixabay.com/photo/2017/03/31/18/44/carrot-soup-2192152_1280.jpg",
         "tags": ["vegetarian"],
+        "image": "/images/soup-sandwich.jpeg",
         "source": "https://pixabay.com/photos/carrot-soup-loaf-herbs-oil-soup-2192152/"
     },
     {
         "meal": "Asian Plate",
         "ingredients": ["chicken", "steamed vegetables"],
-        "image": "https://cdn.pixabay.com/photo/2022/06/07/21/00/chicken-7249273_1280.jpg",
         "tags": ["gluten-free", "dairy-free"],
+        "image": "/images/asian-chicken.jpeg",
         "source": "https://pixabay.com/photos/chicken-asian-cuisine-food-7249273/"
     },
     {
         "meal": "Asian Plate (Tofu)",
         "ingredients": ["tofu", "steamed vegetables"],
-        "image": "https://cdn.pixabay.com/photo/2022/06/07/20/58/salad-7249259_1280.jpg",
         "tags": ["vegetarian", "dairy-free", "gluten-free"],
+        "image": "/images/asian-tofu.jpeg",
         "source": "https://pixabay.com/photos/salad-asian-food-dish-meal-7249259/"
     },
     {
         "meal": "Pasta",
         "ingredients": ["mushrooms"],
-        "image": "https://cdn.pixabay.com/photo/2016/12/31/09/17/food-1942403_1280.jpg",
         "tags": ["vegetarian"],
+        "image": "/images/pasta.jpeg",
         "source": "https://pixabay.com/photos/food-cooking-restaurant-italian-1942403/"
     },
     {
         "meal": "Spaghetti and Meatballs",
         "ingredients": ["meatballs"],
-        "image": "https://cdn.pixabay.com/photo/2021/03/14/01/46/meatballs-6093130_1280.jpg",
         "tags": [],
+        "image": "/images/spaghetti.jpeg",
         "source": "https://pixabay.com/photos/meatballs-food-delicious-dinner-6093130/"
     },
     {
         "meal": "Pizza",
         "ingredients": ["pizza crust"],
-        "image": "https://cdn.pixabay.com/photo/2017/12/10/14/47/pizza-3010062_1280.jpg",
         "tags": ["vegetarian"],
+        "image": "/images/pizza.jpeg",
         "source": "https://pixabay.com/photos/pizza-plate-food-cheese-lunch-3010062/"
     },
     {
         "meal": "Saag Paneer and Roti",
         "ingredients": ["paneer", "spinach"],
-        "image": "https://cdn.pixabay.com/photo/2022/03/02/12/42/paneer-7043102_1280.jpg",
         "tags": ["vegetarian"],
+        "image": "/images/saag.jpeg",
         "source": "https://pixabay.com/photos/paneer-gourmet-dining-restaurant-7043102/"
     },
     {
         "meal": "Salmon",
         "ingredients": ["salmon", "pesto"],
-        "image": "https://cdn.pixabay.com/photo/2015/05/19/23/02/salmon-774482_1280.jpg",
         "tags": ["gluten-free", "dairy-free"],
+        "image": "/images/salmon.jpeg",
         "source": "https://pixabay.com/photos/salmon-lunch-fish-food-774482/"
+    },
+    {
+        "meal": "Burger",
+        "ingredients": ["ground chicken"],
+        "tags": [],
+        "image": "/images/burger.jpeg",
+        "source": "https://pixabay.com/photos/hamburger-snack-burger-gourmet-494706/"
     }
 ]
