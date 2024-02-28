@@ -43,7 +43,7 @@
     },
     {
         "meal": "Kofta",
-        "ingredients": ["ground turkey", "tomatoes"],
+        "ingredients": ["ground chicken", "tomatoes"],
         "image": "https://carveyourcraving.com/wp-content/uploads/2021/09/Best-Malai-Kofta-recipe.jpg",
         "tags": ["gluten-free", "dairy-free"],
         "source": "https://carveyourcraving.com/malai-kofta/"

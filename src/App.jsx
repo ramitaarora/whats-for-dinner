@@ -8,10 +8,9 @@ function App() {
   const [filterForm, setFilterForm] = useState([]);
   const [tagForm, setTagForm] = useState([]);
   const [results, setResults] = useState([]);
-  const [image, setImage] = useState("")
-  const [alt, setAlt] = useState("")
+  const [image, setImage] = useState("https://media.tenor.com/KaDP8fq46oMAAAAi/confused-face.gif")
+  const [alt, setAlt] = useState("https://tenor.com/view/confused-face-look-otter-cute-gif-20502552")
   const [mealName, setMealName] = useState("")
-  const [name, setName] = useState("")
 
   useEffect(() => {
     let ingredients = [];
@@ -56,7 +55,7 @@ function App() {
 
   const handleChoice = (event) => {
     event.preventDefault();
-    let tempFoods = foodData;
+    let tempFoods = [...foodData];
     let counter = 0;
 
     const flip = () => {
@@ -94,43 +93,29 @@ function App() {
 
     if (filterForm.length || tagForm.length) {
 
-      if (filterForm.length && !tagForm.length) {
+      if (filterForm.length) {
         for (let i = 0; i < filterForm.length; i++) {
-          tempFoods.filter(meal => !meal.ingredients.includes(filterForm[i]));
+          tempFoods = tempFoods.filter(meal => !meal.ingredients.includes(filterForm[i]));
         }
-
-        setResults(tempFoods.sort(() => Math.random() - 0.5));
-        flip();
       }
 
-      else if (tagForm.length && !filterForm.length) {
+      if (tagForm.length) {
         for (let i = 0; i < tagForm.length; i++) {
-          tempFoods.filter(meal => !meal.ingredients.includes(filterForm[i]));
+          tempFoods = tempFoods.filter(meal => meal.tags.includes(tagForm[i]));
         }
-
-        setResults(tempFoods.sort(() => Math.random() - 0.5));
-        flip();
       }
-
-      else {
-        for (let i = 0; i < filterForm.length; i++) {
-          tempFoods.filter(meal => !meal.ingredients.includes(filterForm[i]));
-        }
-
-        for (let j = 0; j < tagForm.length; j++) {
-          tempFoods.filter(meal => !meal.ingredients.includes(filterForm[j]));
-        }
-
-        setResults(tempFoods.sort(() => Math.random() - 0.5));
-        flip();
-      }
-
       
+      setResults(tempFoods.sort(() => Math.random() - 0.5));
+      flip();
 
     } else {
       setResults(tempFoods.sort(() => Math.random() - 0.5));
       flip();
     }
+  }
+
+  const reset = () => {
+    location.reload();
   }
 
   return (
@@ -166,20 +151,15 @@ function App() {
         <button onClick={handleChoice}>What's for Dinner?</button>
 
 
-        {results.length ? (
-          <div id="results">
+        <div id="results">
             <div id="image-container">
               <img src={image} alt={alt} />
             </div>
             <h2>{mealName}</h2>
           </div>
-        ) : null}
 
-
+        <button onClick={reset}>Reset</button>
       </main>
-      <footer>
-        <p>Eh who needs a footer</p>
-      </footer>
     </div>
   )
 }
