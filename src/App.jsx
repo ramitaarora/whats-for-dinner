@@ -55,7 +55,9 @@ function App() {
   
   useEffect(() => {
     if (results.length) {
-      handleFlip();
+      setTimeout(() => {
+        handleFlip();
+      }, 500)
     }
   }, [results])
 
