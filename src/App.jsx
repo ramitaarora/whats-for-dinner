@@ -55,9 +55,7 @@ function App() {
   
   useEffect(() => {
     if (results.length) {
-      setTimeout(() => {
-        handleFlip();
-      }, 500)
+      handleFlip();
     }
   }, [results])
 
@@ -177,6 +175,12 @@ function App() {
 
         <button onClick={reset}>Reset</button>
       </main>
+
+      <div id="images">
+            {foodData.map(meal => 
+              <img src={meal.image} alt={meal.meal}/>  
+            )}
+      </div>
     </div>
   )
 }
