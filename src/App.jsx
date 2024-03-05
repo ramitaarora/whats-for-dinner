@@ -134,7 +134,7 @@ function App() {
   }
 
   return (
-    <div>
+    <body>
       <header>
         <h1>What's for Dinner?</h1>
       </header>
@@ -181,7 +181,7 @@ function App() {
               <img src={meal.image} alt={meal.meal}/>  
             )}
       </div>
-    </div>
+    </body>
   )
 }
 

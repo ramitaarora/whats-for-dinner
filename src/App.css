@@ -1,8 +1,22 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+body {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  max-width: 100%;
+  min-width: 100%;
+  margin: 0 auto;
+  background-color: #242424;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+main {
+  width: 70%;
 }
 
 #filters, #options {
@@ -26,6 +40,11 @@
   cursor: pointer;
 }
 
+#filter-container label:hover,
+#tag-container label:hover {
+  background-color: grey;
+}
+
 #filter-container input:checked ~ #filter-label,
 #tag-container input:checked ~ #tag-label {
   background-color: grey;
@@ -46,4 +65,39 @@ input[type="checkbox"] {
 
 #images {
   display: none;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  color: white;
+}
+button:hover {
+  border-color: #b7b7b7;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media screen and (max-width: 800px) {
+  main {
+    width: 100vw;
+    max-width: 100vw;
+  }
+  body {
+    width: 100vw;
+    max-width: 100%;
+  }
+  #image-container img {
+    height: 300px;
+    width: 300px;
+  }
 }
