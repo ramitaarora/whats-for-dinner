@@ -2,13 +2,13 @@
     {
         "meal": "Chicken Curry",
         "ingredients": ["chicken", "tomatoes"],
-        "tags": ["gluten-free", "dairy-free"],
+        "tags": ["gluten-free", "dairy-free", "healthy"],
         "image": "/whats-for-dinner/images/chicken-curry.jpeg",
         "source": "https://pixabay.com/photos/curry-chicken-indian-food-dish-6507120/"
     },
     {
         "meal": "Butter Chicken",
-        "ingredients": ["chicken", "tomatoes", "yogurt"],
+        "ingredients": ["chicken", "tomatoes", "yogurt", "healthy"],
         "tags": ["gluten-free"],
         "image": "/whats-for-dinner/images/butter-chicken.jpeg",
         "source": "https://pixabay.com/photos/naan-butter-chicken-indian-food-5154130/"
@@ -22,7 +22,7 @@
     },
     {
         "meal": "Biriyani",
-        "ingredients": ["chicken", "tomatoes", "yogurt"],
+        "ingredients": ["chicken", "tomatoes", "yogurt", "healthy"],
         "tags": ["gluten-free"],
         "image": "/whats-for-dinner/images/biriyani.jpeg",
         "source": "https://pixabay.com/photos/dish-biryani-cuisine-7043064/"
@@ -30,83 +30,83 @@
     {
         "meal": "Cholle",
         "ingredients": ["chick peas", "tomatoes"],
-        "tags": ["vegetarian", "dairy-free", "gluten-free"],
+        "tags": ["vegetarian", "dairy-free", "gluten-free", "healthy"],
         "image": "/whats-for-dinner/images/cholle.jpeg",
         "source": "https://pixabay.com/photos/bowl-meal-food-cuisine-bread-7683485/"
     },
     {
         "meal": "Rajma",
         "ingredients": ["kidney beans", "tomatoes"],
-        "tags": ["vegetarian", "dairy-free", "gluten-free"],
+        "tags": ["vegetarian", "dairy-free", "gluten-free", "healthy"],
         "image": "/whats-for-dinner/images/rajma.jpeg",
         "source": "https://pixabay.com/photos/beans-soup-stew-bowl-bean-goulash-6383373/"
     },
     {
         "meal": "Kofta",
         "ingredients": ["ground chicken", "tomatoes"],
-        "tags": ["gluten-free", "dairy-free"],
+        "tags": ["gluten-free", "dairy-free", "healthy"],
         "image": "/whats-for-dinner/images/kofta.jpg",
         "source": "https://carveyourcraving.com/malai-kofta/"
     },
     {
         "meal": "Kebab",
         "ingredients": ["ground chicken"],
-        "tags": ["gluten-free", "dairy-free"],
+        "tags": ["gluten-free", "dairy-free", "healthy"],
         "image": "/whats-for-dinner/images/kebab.jpeg",
         "source": "https://pixabay.com/photos/kabab-food-grill-dinner-chicken-4954818/"
     },
     {
         "meal": "Shish Kabab",
         "ingredients": ["chicken"],
-        "tags": ["gluten-free", "dairy-free"],
+        "tags": ["gluten-free", "dairy-free", "healthy"],
         "image": "/whats-for-dinner/images/shish-kabab.jpeg",
         "source": "https://pixabay.com/photos/shish-kebab-meat-skewer-417994/"
     },
     {
         "meal": "Mexican Plate",
-        "ingredients": ["chicken", "avocado"],
+        "ingredients": ["chicken", "avocado", "healthy"],
         "tags": ["gluten-free"],
         "image": "/whats-for-dinner/images/mexican.jpeg",
         "source": "https://pixabay.com/photos/chicken-taco-bowl-salad-mexican-7756518/"
     },
     {
         "meal": "Mediterranean Plate",
-        "ingredients": ["chicken", "hummus", "garlic sauce"],
+        "ingredients": ["chicken", "hummus", "garlic sauce", "healthy"],
         "tags": ["gluten-free", "dairy-free"],
         "image": "/whats-for-dinner/images/mediterranean.jpeg",
         "source": "https://pixabay.com/photos/authentic-greek-greek-food-mezes-1649225/"
     },
     {
         "meal": "Tacos",
-        "ingredients": ["chicken"],
+        "ingredients": ["chicken", "tortillas", "healthy"],
         "tags": ["gluten-free"],
         "image": "/whats-for-dinner/images/tacos.jpeg",
         "source": "https://pixabay.com/photos/tortilla-food-meal-taco-salsa-3041938/"
     },
     {
         "meal": "Chicken 65 Wraps",
-        "ingredients": ["chicken", "roti"],
-        "tags": ["gluten-free"],
+        "ingredients": ["chicken", "roti", "healthy"],
+        "tags": [],
         "image": "/whats-for-dinner/images/chicken-65.jpeg",
         "source": "https://pixabay.com/photos/mexican-food-burrito-mexican-food-2456038/"
     },
     {
         "meal": "Grilled Cheese and Tomato Soup",
-        "ingredients": ["bread", "sliced cheese", "soup"],
+        "ingredients": ["bread", "sliced cheese", "soup", "healthy"],
         "tags": ["vegetarian"],
         "image": "/whats-for-dinner/images/soup-sandwich.jpeg",
         "source": "https://pixabay.com/photos/carrot-soup-loaf-herbs-oil-soup-2192152/"
     },
     {
         "meal": "Asian Plate",
-        "ingredients": ["chicken", "steamed vegetables"],
+        "ingredients": ["chicken", "steamed vegetables", "healthy"],
         "tags": ["gluten-free", "dairy-free"],
         "image": "/whats-for-dinner/images/asian-chicken.jpeg",
         "source": "https://pixabay.com/photos/chicken-asian-cuisine-food-7249273/"
     },
     {
         "meal": "Asian Plate (Tofu)",
-        "ingredients": ["tofu", "steamed vegetables"],
+        "ingredients": ["tofu", "steamed vegetables", "healthy"],
         "tags": ["vegetarian", "dairy-free", "gluten-free"],
         "image": "/whats-for-dinner/images/asian-tofu.jpeg",
         "source": "https://pixabay.com/photos/salad-asian-food-dish-meal-7249259/"
@@ -134,23 +134,58 @@
     },
     {
         "meal": "Saag Paneer and Roti",
-        "ingredients": ["paneer", "spinach"],
+        "ingredients": ["paneer", "spinach", "healthy"],
         "tags": ["vegetarian"],
         "image": "/whats-for-dinner/images/saag.jpeg",
         "source": "https://pixabay.com/photos/paneer-gourmet-dining-restaurant-7043102/"
     },
     {
         "meal": "Salmon",
-        "ingredients": ["salmon", "pesto"],
+        "ingredients": ["salmon", "pesto", "healthy"],
         "tags": ["gluten-free", "dairy-free"],
         "image": "/whats-for-dinner/images/salmon.jpeg",
         "source": "https://pixabay.com/photos/salmon-lunch-fish-food-774482/"
     },
     {
         "meal": "Burger",
-        "ingredients": ["ground chicken"],
+        "ingredients": ["ground chicken", "healthy"],
         "tags": [],
         "image": "/whats-for-dinner/images/burger.jpeg",
         "source": "https://pixabay.com/photos/hamburger-snack-burger-gourmet-494706/"
+    },
+    {
+        "meal": "Minestrone",
+        "ingredients": ["chicken broth", "healthy"],
+        "tags": ["gluten-free", "dairy-free"],
+        "image": "/whats-for-dinner/images/minestrone.jpeg",
+        "source": "https://pixabay.com/photos/soup-vegetable-soup-minestrone-8021570/"
+    },
+    {
+        "meal": "Roast Chicken and Veggies",
+        "ingredients": ["steamed vegetables", "healthy"],
+        "tags": ["gluten-free", "dairy-free"],
+        "image": "/whats-for-dinner/images/chicken-veggies.jpeg",
+        "source": "https://unsplash.com/photos/cooked-dish-mjcJ0FFgdWI"
+    },
+    {
+        "meal": "Lettuce Spring Rolls",
+        "ingredients": ["tofu", "rice paper sheets", "healthy"],
+        "tags": ["gluten-free", "dairy-free", "vegetarian"],
+        "image": "/whats-for-dinner/images/spring-rolls.jpeg",
+        "source": "https://unsplash.com/photos/person-holding-vegetables-InBE7uk3X0I"
+    },
+    {
+        "meal": "Fish and (Sweet Potato) Chips",
+        "ingredients": ["cod", "sweet potato"],
+        "tags": ["gluten-free", "dairy-free"],
+        "image": "/whats-for-dinner/images/fish-chips.jpeg",
+        "source": "https://unsplash.com/photos/potato-fries-DQbE7rhTC8w"
+    },
+    {
+        "meal": "Fish Tacos",
+        "ingredients": ["cod", "tortillas"],
+        "tags": ["dairy-free"],
+        "image": "/whats-for-dinner/images/fish-tacos.jpeg",
+        "source": "https://unsplash.com/photos/four-tacos-on-tray-2hBUvhe81mU"
     }
 ]
