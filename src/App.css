@@ -87,6 +87,12 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+footer {
+  font-size: 8px;
+  margin-top: 50px;
+  color: rgb(57, 57, 57);
+}
+
 @media screen and (max-width: 800px) {
   main {
     width: 100vw;
