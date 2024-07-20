@@ -278,5 +278,29 @@
         "image": "/whats-for-dinner/images/bagel-bites.png",
         "source": "https://www.allrecipes.com/recipe/282887/air-fryer-everything-bagel-bites/",
         "type": "snack"
+    },
+    {
+        "meal": "Zucchini Boats",
+        "ingredients": ["zucchini", "meatballs"],
+        "tags": ["healthy", "gluten-free"],
+        "image": "/whats-for-dinner/images/zucchini-boats.jpg",
+        "source": "https://www.dinneratthezoo.com/stuffed-zucchini-boats/",
+        "type": "dinner"
+    },
+    {
+        "meal": "Chicken 65",
+        "ingredients": ["chicken", "bread crumbs"],
+        "tags": ["dairy-free"],
+        "image": "/whats-for-dinner/images/chicken-65.jpg",
+        "source": "https://www.indianhealthyrecipes.com/chicken-65-recipe-no-egg-restaurant-style-chicken-recipes/",
+        "type": "dinner"
+    },
+    {
+        "meal": "Basil Chicken Coconut Curry",
+        "ingredients": ["chicken", "coconut milk", "basil"],
+        "tags": ["healthy", "dairy-free", "gluten-free"],
+        "image": "/whats-for-dinner/images/basil-chicken-coconut-curry.jpg",
+        "source": "https://www.halfbakedharvest.com/coconut-basil-chicken-curry/",
+        "type": "dinner"
     }
 ]
