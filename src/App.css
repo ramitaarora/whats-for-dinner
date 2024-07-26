@@ -3,6 +3,10 @@
 }
 
 body {
+  margin: 0;
+}
+
+#body {
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -19,7 +23,7 @@ main {
   width: 70%;
 }
 
-#filters, #options {
+#filters, #options, #meal-type {
   display: flex; 
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -27,26 +31,27 @@ main {
 }
 
 #filter-container,
-#tag-container {
+#tag-container,
+#type-container {
   margin: 15px 10px;
 }
 
-#filter-container label,
-#tag-container label {
+label {
   background-color: lightgrey;
   color: black;
   padding: 10px;
   border-radius: 10px;
   cursor: pointer;
+  font-size: 14px;
 }
 
-#filter-container label:hover,
-#tag-container label:hover {
+label:hover {
   background-color: grey;
 }
 
 #filter-container input:checked ~ #filter-label,
-#tag-container input:checked ~ #tag-label {
+#tag-container input:checked ~ #tag-label,
+#type-container input:checked ~ #type-label {
   background-color: grey;
 }
 

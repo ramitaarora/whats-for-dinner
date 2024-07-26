@@ -5,7 +5,7 @@
         "tags": ["gluten-free", "dairy-free", "healthy"],
         "image": "/whats-for-dinner/images/chicken-curry.jpeg",
         "source": "https://pixabay.com/photos/curry-chicken-indian-food-dish-6507120/",
-        "type": "dinner"
+        "type": ["dinner"]
     },
     {
         "meal": "Butter Chicken",
@@ -13,7 +13,7 @@
         "tags": ["gluten-free", "healthy"],
         "image": "/whats-for-dinner/images/butter-chicken.jpeg",
         "source": "https://pixabay.com/photos/naan-butter-chicken-indian-food-5154130/",
-        "type": "dinner"
+        "type": ["dinner"]
     },
     {
         "meal": "Mutter Paneer",
@@ -21,7 +21,7 @@
         "tags": ["vegetarian", "gluten-free"],
         "image": "/whats-for-dinner/images/mutter-paneer.jpeg",
         "source": "https://pixabay.com/photos/paneer-gourmet-dining-restaurant-7043097/",
-        "type": "dinner"
+        "type": ["dinner"]
     },
     {
         "meal": "Biriyani",
@@ -29,7 +29,7 @@
         "tags": ["gluten-free", "healthy"],
         "image": "/whats-for-dinner/images/biriyani.jpeg",
         "source": "https://pixabay.com/photos/dish-biryani-cuisine-7043064/",
-        "type": "dinner"
+        "type": ["dinner"]
     },
     {
         "meal": "Cholle",
@@ -37,7 +37,7 @@
         "tags": ["vegetarian", "dairy-free", "gluten-free", "healthy"],
         "image": "/whats-for-dinner/images/cholle.jpeg",
         "source": "https://pixabay.com/photos/bowl-meal-food-cuisine-bread-7683485/",
-        "type": "dinner"
+        "type": ["dinner"]
     },
     {
         "meal": "Rajma",
@@ -45,7 +45,7 @@
         "tags": ["vegetarian", "dairy-free", "gluten-free", "healthy"],
         "image": "/whats-for-dinner/images/rajma.jpeg",
         "source": "https://pixabay.com/photos/beans-soup-stew-bowl-bean-goulash-6383373/",
-        "type": "dinner"
+        "type": ["dinner"]
     },
     {
         "meal": "Kofta",
@@ -53,7 +53,7 @@
         "tags": ["gluten-free", "dairy-free", "healthy"],
         "image": "/whats-for-dinner/images/kofta.jpg",
         "source": "https://carveyourcraving.com/malai-kofta/",
-        "type": "dinner"
+        "type": ["dinner"]
     },
     {
         "meal": "Zucchini Kofta",
@@ -61,7 +61,7 @@
         "tags": ["gluten-free", "dairy-free", "healthy"],
         "image": "/whats-for-dinner/images/kofta.jpg",
         "source": "https://carveyourcraving.com/malai-kofta/",
-        "type": "dinner"
+        "type": ["dinner"]
     },
     {
         "meal": "Kebab",
@@ -69,7 +69,7 @@
         "tags": ["gluten-free", "dairy-free", "healthy"],
         "image": "/whats-for-dinner/images/kebab.jpeg",
         "source": "https://pixabay.com/photos/kabab-food-grill-dinner-chicken-4954818/",
-        "type": "dinner"
+        "type": ["dinner"]
     },
     {
         "meal": "Shish Kabab",
@@ -77,7 +77,7 @@
         "tags": ["gluten-free", "dairy-free", "healthy"],
         "image": "/whats-for-dinner/images/shish-kabab.jpeg",
         "source": "https://pixabay.com/photos/shish-kebab-meat-skewer-417994/",
-        "type": "dinner"
+        "type": ["dinner"]
     },
     {
         "meal": "Mexican Plate",
@@ -85,7 +85,7 @@
         "tags": ["gluten-free", "healthy"],
         "image": "/whats-for-dinner/images/mexican.jpeg",
         "source": "https://pixabay.com/photos/chicken-taco-bowl-salad-mexican-7756518/",
-        "type": "dinner"
+        "type": ["dinner", "lunch"]
     },
     {
         "meal": "Mediterranean Plate",
@@ -93,7 +93,7 @@
         "tags": ["gluten-free", "dairy-free", "healthy"],
         "image": "/whats-for-dinner/images/mediterranean.jpeg",
         "source": "https://pixabay.com/photos/authentic-greek-greek-food-mezes-1649225/",
-        "type": "dinner"
+        "type": ["dinner", "lunch"]
     },
     {
         "meal": "Tacos",
@@ -101,7 +101,7 @@
         "tags": ["gluten-free", "healthy"],
         "image": "/whats-for-dinner/images/tacos.jpeg",
         "source": "https://pixabay.com/photos/tortilla-food-meal-taco-salsa-3041938/",
-        "type": "dinner"
+        "type": ["dinner", "lunch"]
     },
     {
         "meal": "Chicken 65 Wraps",
@@ -109,7 +109,7 @@
         "tags": ["healthy"],
         "image": "/whats-for-dinner/images/chicken-65.jpeg",
         "source": "https://pixabay.com/photos/mexican-food-burrito-mexican-food-2456038/",
-        "type": "dinner"
+        "type": ["dinner"]
     },
     {
         "meal": "Asian Plate",
@@ -117,7 +117,7 @@
         "tags": ["gluten-free", "dairy-free", "healthy"],
         "image": "/whats-for-dinner/images/asian-chicken.jpeg",
         "source": "https://pixabay.com/photos/chicken-asian-cuisine-food-7249273/",
-        "type": "dinner"
+        "type": ["dinner"]
     },
     {
         "meal": "Asian Plate (Tofu)",
@@ -125,7 +125,7 @@
         "tags": ["vegetarian", "dairy-free", "gluten-free", "healthy"],
         "image": "/whats-for-dinner/images/asian-tofu.jpeg",
         "source": "https://pixabay.com/photos/salad-asian-food-dish-meal-7249259/",
-        "type": "dinner"
+        "type": ["dinner", "lunch"]
     },
     {
         "meal": "Pasta",
@@ -133,7 +133,7 @@
         "tags": ["vegetarian"],
         "image": "/whats-for-dinner/images/pasta.jpeg",
         "source": "https://pixabay.com/photos/food-cooking-restaurant-italian-1942403/",
-        "type": "dinner"
+        "type": ["dinner"]
     },
     {
         "meal": "Spaghetti and Meatballs",
@@ -141,7 +141,7 @@
         "tags": [],
         "image": "/whats-for-dinner/images/spaghetti.jpeg",
         "source": "https://pixabay.com/photos/meatballs-food-delicious-dinner-6093130/",
-        "type": "dinner"
+        "type": ["dinner"]
     },
     {
         "meal": "Keto Pizza",
@@ -149,7 +149,7 @@
         "tags": ["vegetarian"],
         "image": "/whats-for-dinner/images/pizza.jpeg",
         "source": "https://pixabay.com/photos/pizza-plate-food-cheese-lunch-3010062/",
-        "type": "dinner"
+        "type": ["dinner"]
     },
     {
         "meal": "Saag Paneer",
@@ -157,7 +157,7 @@
         "tags": ["vegetarian", "healthy"],
         "image": "/whats-for-dinner/images/saag.jpeg",
         "source": "https://pixabay.com/photos/paneer-gourmet-dining-restaurant-7043102/",
-        "type": "dinner"
+        "type": ["dinner"]
     },
     {
         "meal": "Salmon",
@@ -165,7 +165,7 @@
         "tags": ["gluten-free", "dairy-free", "healthy"],
         "image": "/whats-for-dinner/images/salmon.jpeg",
         "source": "https://pixabay.com/photos/salmon-lunch-fish-food-774482/",
-        "type": "dinner"
+        "type": ["dinner"]
     },
     {
         "meal": "Burger",
@@ -173,15 +173,15 @@
         "tags": [],
         "image": "/whats-for-dinner/images/burger.jpeg",
         "source": "https://pixabay.com/photos/hamburger-snack-burger-gourmet-494706/",
-        "type": "dinner"
+        "type": ["dinner"]
     },
     {
-        "meal": "Minestrone",
+        "meal": "Minestrone Soup",
         "ingredients": ["chicken broth", "kidney beans"],
         "tags": ["gluten-free", "dairy-free", "healthy"],
         "image": "/whats-for-dinner/images/minestrone.jpeg",
         "source": "https://pixabay.com/photos/soup-vegetable-soup-minestrone-8021570/",
-        "type": "dinner"
+        "type": ["dinner", "lunch"]
     },
     {
         "meal": "Roast Chicken and Veggies",
@@ -189,7 +189,7 @@
         "tags": ["gluten-free", "dairy-free", "healthy"],
         "image": "/whats-for-dinner/images/chicken-veggies.jpeg",
         "source": "https://unsplash.com/photos/cooked-dish-mjcJ0FFgdWI",
-        "type": "dinner"
+        "type": ["dinner"]
     },
     {
         "meal": "Fish and (Sweet Potato) Chips",
@@ -197,7 +197,7 @@
         "tags": ["gluten-free", "dairy-free"],
         "image": "/whats-for-dinner/images/fish-chips.jpeg",
         "source": "https://unsplash.com/photos/potato-fries-DQbE7rhTC8w",
-        "type": "dinner"
+        "type": ["dinner"]
     },
     {
         "meal": "Fish Tacos",
@@ -205,7 +205,7 @@
         "tags": ["dairy-free"],
         "image": "/whats-for-dinner/images/fish-tacos.jpeg",
         "source": "https://unsplash.com/photos/four-tacos-on-tray-2hBUvhe81mU",
-        "type": "dinner"
+        "type": ["dinner"]
     },
     {
         "meal": "Yogurt Parfait",
@@ -213,7 +213,7 @@
         "tags": ["healthy", "gluten-free", "vegetarian"],
         "image": "/whats-for-dinner/images/yogurt-parfait.jpeg",
         "source": "https://pixabay.com/photos/yogurt-strawberries-food-fruit-1442034/",
-        "type": "snack"
+        "type": ["snack", "breakfast"]
     },
     {
         "meal": "Apples and Peanut Butter",
@@ -221,7 +221,7 @@
         "tags": ["healthy", "gluten-free", "vegetarian", "dairy-free"],
         "image": "/whats-for-dinner/images/apple-pb.jpeg",
         "source": "https://unsplash.com/photos/apple-beside-peanut-butter-zBdYOipnD9s",
-        "type": "snack"
+        "type": ["snack", "breakfast"]
     },
     {
         "meal": "Almonds",
@@ -229,7 +229,7 @@
         "tags": ["healthy", "gluten-free", "vegetarian", "dairy-free"],
         "image": "/whats-for-dinner/images/almonds.jpeg",
         "source": "https://unsplash.com/photos/brown-round-food-on-white-ceramic-plate-qubeRW0DiDM",
-        "type": "snack"
+        "type": ["snack"]
     },
     {
         "meal": "Guacamole",
@@ -237,7 +237,7 @@
         "tags": ["healthy", "gluten-free", "vegetarian", "dairy-free"],
         "image": "/whats-for-dinner/images/guacamole.jpeg",
         "source": "https://unsplash.com/photos/green-soup-in-white-ceramic-bowl-9ND-qkGs1_8",
-        "type": "snack"
+        "type": ["snack"]
     },
     {
         "meal": "Hummus (with Cucumbers, Carrots or Celery)",
@@ -245,7 +245,7 @@
         "tags": ["healthy", "gluten-free", "vegetarian", "dairy-free"],
         "image": "/whats-for-dinner/images/hummus.jpeg",
         "source": "https://unsplash.com/photos/fried-chicken-and-sliced-tomato-on-white-ceramic-plate-ofmA7DNpBys",
-        "type": "snack"
+        "type": ["snack"]
     },
     {
         "meal": "Roasted Chickpeas",
@@ -253,7 +253,7 @@
         "tags": ["healthy", "gluten-free", "vegetarian", "dairy-free"],
         "image": "/whats-for-dinner/images/chickpeas.jpeg",
         "source": "https://unsplash.com/photos/yellow-corn-on-glass-bowl-h83Rm3njjcg",
-        "type": "snack"
+        "type": ["snack"]
     },
     {
         "meal": "Cheese Board (Cheese, Fruits, Nuts and Seeds)",
@@ -261,7 +261,7 @@
         "tags": ["healthy", "gluten-free", "vegetarian", "dairy-free"],
         "image": "/whats-for-dinner/images/cheese-board.jpeg",
         "source": "https://unsplash.com/photos/fruits-and-meats-on-white-ceramic-plate-beside-wine-glass-and-bottle-kBtP2IWiYSI",
-        "type": "snack"
+        "type": ["snack"]
     },
     {
         "meal": "Avocado Toast",
@@ -269,7 +269,7 @@
         "tags": ["healthy", "gluten-free", "vegetarian", "dairy-free"],
         "image": "/whats-for-dinner/images/avocado-toast.jpeg",
         "source": "https://unsplash.com/photos/brown-bread-with-green-vegetable-on-white-ceramic-plate-ZSAE2DubK94",
-        "type": "snack"
+        "type": ["snack", "breakfast"]
     },
     {
         "meal": "Bagel Bites",
@@ -277,7 +277,7 @@
         "tags": ["healthy", "gluten-free", "vegetarian"],
         "image": "/whats-for-dinner/images/bagel-bites.png",
         "source": "https://www.allrecipes.com/recipe/282887/air-fryer-everything-bagel-bites/",
-        "type": "snack"
+        "type": ["snack", "breakfast"]
     },
     {
         "meal": "Zucchini Boats",
@@ -285,7 +285,7 @@
         "tags": ["healthy", "gluten-free"],
         "image": "/whats-for-dinner/images/zucchini-boats.jpg",
         "source": "https://www.dinneratthezoo.com/stuffed-zucchini-boats/",
-        "type": "dinner"
+        "type": ["dinner", "lunch"]
     },
     {
         "meal": "Chicken 65",
@@ -293,7 +293,7 @@
         "tags": ["dairy-free"],
         "image": "/whats-for-dinner/images/chicken-65.jpg",
         "source": "https://www.indianhealthyrecipes.com/chicken-65-recipe-no-egg-restaurant-style-chicken-recipes/",
-        "type": "dinner"
+        "type": ["dinner"]
     },
     {
         "meal": "Basil Chicken Coconut Curry",
@@ -301,6 +301,30 @@
         "tags": ["healthy", "dairy-free", "gluten-free"],
         "image": "/whats-for-dinner/images/basil-chicken-coconut-curry.jpg",
         "source": "https://www.halfbakedharvest.com/coconut-basil-chicken-curry/",
-        "type": "dinner"
+        "type": ["dinner"]
+    },
+    {
+        "meal": "Pura",
+        "ingredients": ["chick pea flour"],
+        "tags": ["healthy", "dairy-free", "gluten-free", "vegetarian"],
+        "image": "/whats-for-dinner/images/puda.png",
+        "source": "https://www.ruchiskitchen.com/besan-ka-puda/",
+        "type": ["dinner", "breakfast", "snack", "lunch"]
+    },
+    {
+        "meal": "Keto Pancakes",
+        "ingredients": ["keto pancake mix"],
+        "tags": ["gluten-free", "vegetarian"],
+        "image": "/whats-for-dinner/images/pancakes.jpg",
+        "source": "https://pixabay.com/photos/hot-chocolate-drink-food-cup-2574466/",
+        "type": ["breakfast", "dinner"]
+    },
+    {
+        "meal": "Omelette",
+        "ingredients": ["eggs"],
+        "tags": ["gluten-free", "vegetarian", "dairy-free", "healthy"],
+        "image": "/whats-for-dinner/images/eggs.jpg",
+        "source": "https://pixabay.com/photos/bread-egg-breakfast-delicious-food-1836411/",
+        "type": ["breakfast", "snack"]
     }
 ]

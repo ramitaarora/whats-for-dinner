@@ -5,26 +5,23 @@ import "./App.css";
 function App() {
   const [filterOptions, setFilterOptions] = useState([]);
   const [tagOptions, setTagOptions] = useState([]);
+  const [mealTypeOptions, setMealTypeOptions] = useState([]);
   const [filterForm, setFilterForm] = useState([]);
   const [tagForm, setTagForm] = useState([]);
+  const [mealTypeForm, setMealTypeForm] = useState([]);
   const [results, setResults] = useState([]);
-  const [image, setImage] = useState(
-    "https://media.tenor.com/KaDP8fq46oMAAAAi/confused-face.gif"
-  );
-  const [alt, setAlt] = useState(
-    "https://tenor.com/view/confused-face-look-otter-cute-gif-20502552"
-  );
+  const [image, setImage] = useState("https://media.tenor.com/KaDP8fq46oMAAAAi/confused-face.gif");
+  const [alt, setAlt] = useState("https://tenor.com/view/confused-face-look-otter-cute-gif-20502552");
   const [mealName, setMealName] = useState("");
 
   useEffect(() => {
     let ingredients = [];
     let tags = [];
+    let types = [];
 
     foodData.map((meal) => {
       for (let i = 0; i < meal.ingredients.length; i++) {
-        if (
-          !ingredients.find((ingredient) => ingredient === meal.ingredients[i])
-        ) {
+        if (!ingredients.find((ingredient) => ingredient === meal.ingredients[i])) {
           ingredients.push(meal.ingredients[i]);
         }
       }
@@ -33,10 +30,16 @@ function App() {
           tags.push(meal.tags[j]);
         }
       }
+      for (let k = 0; k < meal.type.length; k++) {
+        if (!types.find((type) => type === meal.type[k])) {
+          types.push(meal.type[k]);
+        }
+      }
     });
 
     setFilterOptions(ingredients);
     setTagOptions(tags);
+    setMealTypeOptions(types);
   }, [foodData]);
 
   const addFilter = (event) => {
@@ -44,8 +47,7 @@ function App() {
       setFilterForm((pre) => [...pre, event.target.id]);
     } else {
       let unselect = filterForm.filter(
-        (ingredient) => ingredient !== event.target.id
-      );
+        (ingredient) => ingredient !== event.target.id);
       setFilterForm(unselect);
     }
   };
@@ -58,6 +60,15 @@ function App() {
       setTagForm(unselect);
     }
   };
+
+  const addType = (event) => {
+    if (event.target.checked) {
+      setMealTypeForm((pre) => [...pre, event.target.id]);
+    } else {
+      let unselect = mealTypeForm.filter((type) => type !== event.target.id);
+      setMealTypeForm(unselect);
+    }
+  }
 
   useEffect(() => {
     if (results.length) {
@@ -112,22 +123,24 @@ function App() {
     const filterArray = () => {
       if (filterForm.length) {
         for (let i = 0; i < filterForm.length; i++) {
-          tempFoods = tempFoods.filter(
-            (meal) => !meal.ingredients.includes(filterForm[i])
-          );
+          tempFoods = tempFoods.filter((meal) => !meal.ingredients.includes(filterForm[i]));
         }
       }
 
       if (tagForm.length) {
         for (let i = 0; i < tagForm.length; i++) {
-          tempFoods = tempFoods.filter((meal) =>
-            meal.tags.includes(tagForm[i])
-          );
+          tempFoods = tempFoods.filter((meal) => meal.tags.includes(tagForm[i]));
+        }
+      }
+
+      if (mealTypeForm.length) {
+        for (let i = 0; i < mealTypeForm.length; i++) {
+          tempFoods = tempFoods.filter((meal) => meal.type.includes(mealTypeForm[i]));
         }
       }
     };
 
-    if (filterForm.length || tagForm.length) {
+    if (filterForm.length || tagForm.length || mealTypeForm.length) {
       filterArray();
       setArray();
     } else {
@@ -140,55 +153,72 @@ function App() {
   };
 
   return (
-    <body>
+    <div id="body">
       <header>
-        <h1>What's for Dinner?</h1>
+        <h1>What Do I Eat?</h1>
       </header>
       <main>
-        <h2>Select All Ingredients Not on Hand</h2>
+        <h2>Select Meal Type(s)</h2>
+        <div id="meal-type">
+          {mealTypeOptions.length
+          && mealTypeOptions.map((type, index) => (
+            <div id="type-container" key={index}>
+              <input
+                id={type}
+                type="checkbox"
+                value={type}
+                onClick={addType}
+              ></input>
+                <label id="type-label" htmlFor={type}>
+                  {type}
+                </label>
+            </div>
+          ))}
+        </div>
 
+        <h2>Select All Ingredients Not on Hand</h2>
         <div id="filters">
           {filterOptions.length
-            ? filterOptions.map((ingredient, index) => (
-                <div id="filter-container" key={index}>
-                  <input
-                    id={ingredient}
-                    type="checkbox"
-                    value={ingredient}
-                    onClick={addFilter}
-                  ></input>
-                  <label id="filter-label" htmlFor={ingredient}>
-                    {ingredient}
-                  </label>
-                </div>
-              ))
-            : null}
+          && filterOptions.map((ingredient, index) => (
+              <div id="filter-container" key={index}>
+                <input
+                  id={ingredient}
+                  type="checkbox"
+                  value={ingredient}
+                  onClick={addFilter}
+                ></input>
+                <label id="filter-label" htmlFor={ingredient}>
+                  {ingredient}
+                </label>
+              </div>
+            ))}
         </div>
 
         <h2>Include Only:</h2>
         <div id="options">
           {tagOptions.length
-            ? tagOptions.map((tag, index) => (
-                <div id="tag-container" key={index}>
-                  <input
-                    id={tag}
-                    type="checkbox"
-                    value={tag}
-                    onClick={addTag}
-                  ></input>
-                  <label id="tag-label" htmlFor={tag}>
-                    {tag}
-                  </label>
-                </div>
-              ))
-            : null}
+            && tagOptions.map((tag, index) => (
+              <div id="tag-container" key={index}>
+                <input
+                  id={tag}
+                  type="checkbox"
+                  value={tag}
+                  onClick={addTag}
+                ></input>
+                <label id="tag-label" htmlFor={tag}>
+                  {tag}
+                </label>
+              </div>
+            ))}
         </div>
-        <button onClick={handleChoice}>What's for Dinner?</button>
+        <button onClick={handleChoice}>What Do I Eat?</button>
 
         <div id="results">
-          <div id="image-container">
-            <img src={image} alt={alt} />
-          </div>
+          <a href={alt} target="_blank">
+            <div id="image-container">
+              <img src={image} alt={mealName} title={mealName}/>
+            </div>
+          </a>
           <h2>{mealName}</h2>
         </div>
 
@@ -196,15 +226,15 @@ function App() {
       </main>
 
       <div id="images">
-        {foodData.map((meal) => (
-          <img src={meal.image} alt={meal.meal} />
+        {foodData.map((meal, index) => (
+          <img src={meal.image} alt={meal.meal} key={index} />
         ))}
       </div>
 
       <footer>
         <p>Footers are overrated™</p>
       </footer>
-    </body>
+    </div>
   );
 }
 
